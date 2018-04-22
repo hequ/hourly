@@ -4,18 +4,24 @@
   "description": "Simple bookkeeping for freelance entrepreneurs",
   "main": "index.js",
   "scripts": {
+    "build": "npx webpack --config webpack.config.js",
+    "serve": "npx webpack-serve --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Henri Kinnunen",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "@babel/preset-react": "^7.0.0-beta.44",
+    "babel-loader": "^8.0.0-beta.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15"
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.0.0-beta.44",
-    "html-webpack-plugin": "^3.2.0"
+    "html-webpack-plugin": "^3.2.0",
+    "webpack-serve": "^0.3.1"
   }
 }
