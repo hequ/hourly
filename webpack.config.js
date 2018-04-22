@@ -5,7 +5,7 @@ module.exports = {
   mode: 'development',
   entry: './src/index.jsx',
   output: {
-    filename: './dist/app.bundle.js'
+    filename: 'app.bundle.js'
   },
   module: {
     rules: [
@@ -24,5 +24,9 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin("dist"),
+    new HtmlWebpackPlugin({
+      title: 'Hourly',
+      template: 'templates/index.html'
+    })
   ]
 }

@@ -9,4 +9,4 @@ const App = () => (
   </div>
 )
 
-ReactDom.render(<App />, document.querySelector('body'))
+ReactDom.render(<App />, document.querySelector('#app-container'))
